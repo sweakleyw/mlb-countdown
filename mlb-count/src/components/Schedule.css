@@ -6,15 +6,28 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #ffff;
 }
 
 #gamebox {
-  margin: 25px;
+  margin: 25px 75px 25px 75px;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  color: #ffff;
+  /* background-color: rgba(0, 0, 255, 0.438); */
 }
 
 #game-container {
   display: grid;
   grid-template-columns: auto auto auto;
+}
+
+#game-day {
+  border: 3px solid #ffff;
+  margin: 15px;
+  /* background-color: #0000009a; */
+}
+
+#away {
+  padding-bottom: 7px;
 }
