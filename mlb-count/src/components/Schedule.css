@@ -2,11 +2,25 @@
   box-sizing: border-box;
 }
 
-h2 {
+legend {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #ffff;
+  padding: 0 15px;
+  font-size: 20px;
+}
+
+fieldset {
+  border: 3px solid white;
+  color: white;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #gamebox {
@@ -14,7 +28,8 @@ h2 {
   text-align: center;
   padding: 15px;
   color: #ffff;
-  /* background-color: rgba(0, 0, 255, 0.438); */
+  background-color: rgba(107, 0, 0, 0.541);
+  border-radius: 5px;
 }
 
 #game-container {
@@ -23,11 +38,57 @@ h2 {
 }
 
 #game-day {
-  border: 3px solid #ffff;
   margin: 15px;
-  /* background-color: #0000009a; */
 }
 
 #away {
   padding-bottom: 7px;
+}
+
+@media (min-width: 768px) {
+  /* fieldset {
+    max-width: 450px;
+    max-height: 100vh;
+  } */
+
+  #container {
+    flex: 1 0 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  #container {
+    max-width: 450px;
+    gap: 40px;
+    max-height: 100vh;
+    margin-top: 70px;
+  }
+
+  #game-container {
+    max-width: 350px;
+    grid-template-columns: auto auto;
+  }
+
+  #game-day {
+    margin-left: -35px;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  #container {
+    margin-top: 200px;
+    max-width: 450px;
+    gap: 20px;
+  }
+
+  #game-container {
+    max-width: 350px;
+    grid-template-columns: auto auto;
+  }
+
+  #game-day {
+    margin-left: -35px;
+    margin-right: 40px;
+  }
 }

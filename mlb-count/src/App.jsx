@@ -5,8 +5,10 @@ import { Schedule } from "./components/Schedule";
 function App() {
   return (
     <div className='App'>
-      <Countdown />
-      <Schedule />
+      <div id='bg'>
+        <Countdown />
+        <Schedule />
+      </div>
     </div>
   );
 }

@@ -22,23 +22,25 @@ export const Schedule = () => {
 
   return (
     <div id='container'>
-      <h2>Opening Day Games</h2>
-      <div id='game-day'>
-        <div id='game-container'>
-          {games.length > 0
-            ? games.map((game) => {
-                return (
-                  <div
-                    id='gamebox'
-                    key={game.gameID}>
-                    <div id='away'>{game.away}</div>
-                    <div id='home'>{game.home}</div>
-                  </div>
-                );
-              })
-            : null}
+      <fieldset>
+        <legend>Opening Day Games</legend>
+        <div id='game-day'>
+          <div id='game-container'>
+            {games.length > 0
+              ? games.map((game) => {
+                  return (
+                    <div
+                      id='gamebox'
+                      key={game.gameID}>
+                      <div id='away'>{game.away}</div>
+                      <div id='home'>{game.home}</div>
+                    </div>
+                  );
+                })
+              : null}
+          </div>
         </div>
-      </div>
+      </fieldset>
     </div>
   );
 };
