@@ -17,6 +17,7 @@ body {
   color: #ffffff;
   padding: 15px;
   font-size: 2rem;
+  margin-top: 20px;
 }
 
 .container {
@@ -55,6 +56,12 @@ body {
   font-size: 1.3rem;
 }
 
+@media (max-width: 1260px) {
+  .countdown {
+    margin-top: 200px;
+  }
+}
+
 @media (min-width: 768px) {
   .countdown {
     flex: 1 0 450px;
@@ -72,13 +79,13 @@ body {
     justify-content: center;
     align-items: center;
 
-    margin-top: 300px;
+    margin-top: 500px;
     max-width: 700px;
   }
 
   .container {
     margin-top: -35px;
-    margin-left: -130px;
+    margin-left: -85%;
   }
 
   .big {
@@ -99,7 +106,7 @@ body {
 @media (max-width: 480px) {
   .countdown {
     max-width: 450px;
-    margin-top: 500px;
+    margin-top: 450px;
   }
 
   h1 {
@@ -112,8 +119,8 @@ body {
 
   .container {
     flex-wrap: nowrap;
-    justify-content: center;
     gap: 1px;
+    margin-left: -160px;
   }
 
   .values {
